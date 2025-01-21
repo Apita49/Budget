@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31815.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.RestAPI", "BudgetMan\BudgetMan.RestAPI.csproj", "{E7B0C40C-ECCF-446B-A2AA-A73260DB471D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.Service", "BudgetMan.Service\BudgetMan.Service.csproj", "{59ADB1C5-49B3-44D2-A9F5-726BF0F24FFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.Dao.Interface", "BudgetMan.Dao.Interface\BudgetMan.Dao.Interface.csproj", "{E9F761FF-F7A8-451D-A338-D43E46BB53F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.Dao.MongoDb", "BudgetMan.Dao.MongoDb\BudgetMan.Dao.MongoDb.csproj", "{6E6B7521-3D6A-42AC-8287-D85F9819FAA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.Dao.MongoDb.Domain", "BudgetMan.Dao.MongoDb.Domain\BudgetMan.Dao.MongoDb.Domain.csproj", "{46D9FDF9-4509-4E59-832B-83EABE584228}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetMan.Domain", "BudgetMan.Domain\BudgetMan.Domain.csproj", "{3777DA21-51A7-4A8E-B5DD-291D1A01E990}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E7B0C40C-ECCF-446B-A2AA-A73260DB471D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7B0C40C-ECCF-446B-A2AA-A73260DB471D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7B0C40C-ECCF-446B-A2AA-A73260DB471D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7B0C40C-ECCF-446B-A2AA-A73260DB471D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59ADB1C5-49B3-44D2-A9F5-726BF0F24FFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59ADB1C5-49B3-44D2-A9F5-726BF0F24FFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59ADB1C5-49B3-44D2-A9F5-726BF0F24FFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59ADB1C5-49B3-44D2-A9F5-726BF0F24FFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9F761FF-F7A8-451D-A338-D43E46BB53F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9F761FF-F7A8-451D-A338-D43E46BB53F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9F761FF-F7A8-451D-A338-D43E46BB53F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9F761FF-F7A8-451D-A338-D43E46BB53F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E6B7521-3D6A-42AC-8287-D85F9819FAA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E6B7521-3D6A-42AC-8287-D85F9819FAA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E6B7521-3D6A-42AC-8287-D85F9819FAA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E6B7521-3D6A-42AC-8287-D85F9819FAA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D9FDF9-4509-4E59-832B-83EABE584228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D9FDF9-4509-4E59-832B-83EABE584228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D9FDF9-4509-4E59-832B-83EABE584228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D9FDF9-4509-4E59-832B-83EABE584228}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3777DA21-51A7-4A8E-B5DD-291D1A01E990}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3777DA21-51A7-4A8E-B5DD-291D1A01E990}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3777DA21-51A7-4A8E-B5DD-291D1A01E990}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3777DA21-51A7-4A8E-B5DD-291D1A01E990}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92A0BF7B-AD95-40F2-924C-64289C566E4F}
+	EndGlobalSection
+EndGlobal
