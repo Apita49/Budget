@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # MongoDB Service
+  mongodb:
+    image: mongo:latest
+    container_name: budget_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_DATABASE: BudgetManDb
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - budget_network
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # BudgetMan API Service
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: budget_api
+    restart: unless-stopped
+    ports:
+      - "5002:5002"
+      - "5003:5003"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_URLS: http://+:5002
+      DatabaseSetting__ConnectionString: mongodb://mongodb:27017
+      DatabaseSetting__DatabaseName: BudgetManDb
+      DatabaseSetting__PeriodCollectionName: Period
+    depends_on:
+      mongodb:
+        condition: service_healthy
+    networks:
+      - budget_network
+
+volumes:
+  mongodb_data:
+    driver: local
+
+networks:
+  budget_network:
+    driver: bridge
